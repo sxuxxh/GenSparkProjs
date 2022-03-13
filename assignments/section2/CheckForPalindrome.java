@@ -7,11 +7,6 @@ public class CheckForPalindrome implements Assignment {
         // ↓↓↓↓ your code goes here ↓↓↓↓
         String revstr = "";
         revstr = new StringBuilder(pally).reverse().toString();
-        if (revstr.equals(pally)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return (revstr.equals(pally)) ? true : false;
     }
 }

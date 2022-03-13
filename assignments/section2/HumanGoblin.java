@@ -5,13 +5,12 @@ import genspark.assignments.Assignment;
 public class HumanGoblin implements Assignment {
     public String solution(String str) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        String msg = null;
-        if (str.equals("goblin")) {
-            msg = "Attack the Goblin!";
+        switch (str) {
+            case "goblin":
+                return "Attack the Goblin!";
+            case "human":
+                return "You aRe one of us!";
         }
-        else if (str.equals("human")) {
-            msg = "You aRe one of us!";
-        }
-        return msg;
+        return null;
     }
 }

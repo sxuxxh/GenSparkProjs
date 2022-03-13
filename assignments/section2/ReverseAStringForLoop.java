@@ -5,11 +5,10 @@ import genspark.assignments.Assignment;
 public class ReverseAStringForLoop implements Assignment {
     public String solution(String str) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        String revstr = "";
-
+        String revStr = "";
         for (int i = str.length() - 1; i >= 0; i--) {
-            revstr = revstr + str.charAt(i);
+            revStr = revStr + str.charAt(i);
         }
-        return revstr;
+        return revStr;
     }
 }

@@ -5,13 +5,12 @@ import genspark.assignments.Assignment;
 public class ReverseAStringWhileLoop implements Assignment {
     public String solution(String str) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        String revstr = "";
-        int length = str.length();
-        int i = 0;
-        while (i < length) {
-            revstr = revstr + str.charAt(length-1);
-            length--;
+        String revStr = "";
+        int strLen = str.length();
+        while (strLen > 0) {
+            revStr = revStr + str.charAt(strLen-1);
+            strLen--;
         }
-        return revstr;
+        return revStr;
     }
 }

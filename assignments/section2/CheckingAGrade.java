@@ -6,16 +6,13 @@ import org.apache.commons.lang3.Range;
 public class CheckingAGrade implements Assignment {
     public String solution(int grade) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        Range<Integer> A = Range.between(90, 100);
-        Range<Integer> B = Range.between(80, 89);
-        Range<Integer> C = Range.between(70, 79);
-        if (A.contains(grade)) {
+        if (grade >= 90 && grade <= 100) {
             return "A";
         }
-        if (B.contains(grade)) {
+        if (grade >= 80 && grade <= 89) {
             return "B";
         }
-        if (C.contains(grade)) {
+        if (grade >= 70 && grade <= 79) {
             return "C";
         }
         else {

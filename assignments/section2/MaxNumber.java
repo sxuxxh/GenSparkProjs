@@ -5,6 +5,6 @@ import genspark.assignments.Assignment;
 public class MaxNumber implements Assignment {
     public int solution(int a, int b) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return Math.max(a, b);
+        return (a > b) ? a : b;
     }
 }
