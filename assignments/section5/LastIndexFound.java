@@ -6,6 +6,12 @@ import java.util.ArrayList;
 public class LastIndexFound implements Assignment {
     public int solution(ArrayList<Integer> nums, int numToFind) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return 0;
+        //reverse count down nums to find last match index
+        for (int i= nums.size()-1; i>=0; i--) {
+            if (nums.get(i) == numToFind) {
+                return i;
+            }
+        }
+        return -1;
     }
 }

@@ -6,6 +6,6 @@ import java.util.HashSet;
 public class SetContainsLetter implements Assignment {
     public Object solution(HashSet<Integer> nums, int elm) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return null;
+        return nums.contains((Object)elm) ? (Object) elm : (Object) "?";
     }
 }

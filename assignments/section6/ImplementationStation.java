@@ -4,4 +4,5 @@ import genspark.assignments.Assignment;
 
 public interface ImplementationStation extends Assignment {
     // ↓↓↓↓ your code goes here ↓↓↓↓
+    String speak();
 }

@@ -6,6 +6,16 @@ import java.util.HashMap;
 public class RetrieveValueFromGivenKey implements Assignment {
     public int solution(HashMap<Integer,Integer> map, Integer value) {
         // ↓↓↓↓ your code goes here ↓↓↓↓
-        return 0;
+        try {
+            for (int key : map.keySet()
+            ) {
+                if (key == value) {
+                    return map.get(key);
+                }
+            }
+            return 0;
+        } catch (Exception e) {
+            return 0;
+        }
     }
 }
